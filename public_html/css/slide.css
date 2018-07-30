@@ -1,0 +1,27 @@
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.thum{
+    object-fit: contain;
+float : center;
+width : 100%;
+height: 90px;
+}
+
+.thumnail{
+    padding: 25px auto;
+    float: center;
+    border-color: black;
+    margin: 25px auto;
+}
+
+.myControl{
+    padding-bottom: 80px;;
+}
