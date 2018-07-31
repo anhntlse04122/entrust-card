@@ -1,4 +1,4 @@
-.carousel-item {
+.item {
   height: 65vh;
   min-height: 300px;
   background: no-repeat center center scroll;
@@ -22,6 +22,7 @@ height: 90px;
     margin: 25px auto;
 }
 
-.myControl{
-    padding-bottom: 80px;;
+
+.imgSlide{
+    object-fit: contain;
 }
