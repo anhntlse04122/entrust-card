@@ -21,39 +21,38 @@ and open the template in the editor.
         <div class="wrapper">
             <!--start header--> 
             <div class="myHeader" >
-                <div class="mainContain">
+                <div class="mainContainHeader">
                     <!--start nav-->
-                    <div class="row">
-                        <nav class="navbar navbar-inverse">
-                            <div class="container-fluid">
-                                <div class="navbar-header navHeader">
-                                    <button type="button" class="navbar-toggle navButton" data-toggle="collapse" data-target="#myNavbar">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>                        
-                                    </button>
-                                    <a class="navbar-brand" href="#"><img id="myLogo" src="img/logo.png"/></a>
-                                </div>
-                                <div class="collapse navbar-collapse" id="myNavbar">
-
-                                    <ul class="nav navbar-nav thisNav">
-                                        <li class="active"><a href="#">TỔNG QUAN</a></li>
-                                        <li><a href="#">Ô TÔ XE MÁY</a></li>
-                                        <li><a href="#">BẤT ĐỘNG SẢN</a></li>
-                                        <li><a href="#">MÁY BAY</a></li>
-                                        <li><a href="#">Y TẾ SỨC KHỎE</a></li>
-                                        <li><a href="#">TIÊU DÙNG</a></li>
-                                        <li><a href="#">TIN TỨC VÀ TƯ VẤN</a></li>
-                                    </ul>
-                                </div>
+                    <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle myCollapseButton" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>                        
+                                </button>
+                                <a class="navbar-brand" href="#"><img id="myLogo" src="img/logo.png"/></a>
                             </div>
-                        </nav>
-                    </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">TỔNG QUAN</a></li>
+                                    <li><a href="#">Ô TÔ XE MÁY</a></li>
+                                    <li><a href="#">BẤT ĐỘNG SẢN</a></li>
+                                    <li><a href="#">MÁY BAY</a></li>
+                                    <li><a href="#">Y TẾ SỨC KHỎE</a></li>
+                                    <li><a href="#">TIÊU DÙNG</a></li>
+                                    <li><a href="#">TIN TỨC VÀ TƯ VẤN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+
                     <!--end nav-->
                     <!--start intro-->
                     <div class="intro row" >
                         <!--start description-->
-                        <div class="description">
+                        <div class="col-xs-12 col-sm-12 col-lg-6 description">
                             <p class="sloganHeader">ĐĂNG KÝ MCARD ĐỂ SỬ DỤNG DỊCH VỤ Y TẾ SỨC KHỎE ƯU ĐÃI CÙNG VIETMASLOW</p>
                             <p class="sloganDes">VietMaslow với mạng lưới đối tác uy tín là các đơn vị tổ chức đưa bệnh nhân đi du lịch y tế, tầm soát ung thư sớm và điều trị bệnh chuyên khoa theo công nghệ cao tại nước ngoài.</p>
                             <p class="sloganDes">Với mạng lưới đối tác trên toàn quốc sẵn sàng phục vụ khách hàng có nhu cầu đi tới các nước có hệ thống y tế hàng đầu trên thế giới như: Thái Lan, Singapore, Hàn Quốc, Nhật Bản, Đức, Pháp, Mỹ...</p>
@@ -61,9 +60,9 @@ and open the template in the editor.
                         </div>
                         <!--end description-->
                         <!--start image-->
-                        <div class="myCard">
-                            <div class="cardImg">
-                                <img src="img/card.png" />
+                        <div class="col-xs-12 col-sm-12 col-lg-6 myCard">
+                            <div >
+                                <center> <img class="cardImg" src="img/card.png" /> </center>
                             </div>
 
                             <div class="signupHeader text-center">
@@ -87,7 +86,7 @@ and open the template in the editor.
             <!--start quick service description-->
             <div class="quickServiceDescription mainContain">
                 <div class="row">
-                    <div id="carouselExampleIndicators" class="carousel slide col-md-5"  data-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide col-md-5 col-sm-12"  data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
                             <!-- Slide One - Set the background image for this slide in the line below -->
                             <div class="item active" >
@@ -111,14 +110,14 @@ and open the template in the editor.
                             <span class="sr-only">Next</span>
                         </a>
 
-                        <div class="row">
-                            <div class="col-md-4 active thumnail" data-target="#carouselExampleIndicators" data-slide-to="0" ><center><img class="thum" src="img/introSer.png"/></center></div>
-                            <div class="col-md-4 thumnail" data-target="#carouselExampleIndicators" data-slide-to="1"><center><img class="thum" src="img/introSer.png"/></center></div>
-                            <div class="col-md-4 thumnail" data-target="#carouselExampleIndicators" data-slide-to="2"><center><img  class="thum" src="img/introSer.png"/></center></div>
+                        <div class="row serThumb">
+                            <div class="col-md-4 col-xs-4 active thumnail" data-target="#carouselExampleIndicators" data-slide-to="0" ><center><img class="thum" src="img/introSer.png"/></center></div>
+                            <div class="col-md-4 col-xs-4 thumnail" data-target="#carouselExampleIndicators" data-slide-to="1"><center><img class="thum" src="img/introSer.png"/></center></div>
+                            <div class="col-md-4 col-xs-4 thumnail" data-target="#carouselExampleIndicators" data-slide-to="2"><center><img  class="thum" src="img/introSer.png"/></center></div>
 
                         </div>
                     </div>
-                    <div class="col-md-7 introDescription">
+                    <div class="col-md-7 col-sm-12 introDescription">
                         <h3 class="introname">DỊCH VỤ TẦM SOÁT UNG THƯ</h3>
                         <h4 class="detailPrice">300.000đ</h4>
                         <p><i class="fas fa-user-tie text-yellow"></i>  <label>Đối tác: </label> Công ty dịch vụ y tế cộng đồng</p>
@@ -159,15 +158,16 @@ and open the template in the editor.
             <div class="footer">
                 <div class="mainContain">
                     <!--start intro-->
-                    <div class="intro" id="FormSignup">
+                    <div class="intro row" id="FormSignup">
                         <!--start description-->
-                        <div class="descriptionFooter">
-                            <p class="slogan1">MCARD - Cùng bạn chi tiêu thông minh</p><p class="slogan2">
+                        <div class=" col-xs-12 col-sm-12 col-lg-6 descriptionFooter">
+                            <p class="subSlogan">MCARD - Cùng bạn chi tiêu thông minh</p>
+                            <p class="sloganFooter">
                                 Tiêu dùng chậm lại
                                 <br>
                                 Tiết kiệm nhiều hơn
                             </p>
-                            <p class="slogan3">
+                            <p class="sloganDes">
                                 Chỉ với một tấm thẻ nhận ngay 1000+ ưu đãi cho tất cả các nhu cầu mua sắm
                             </p>
                             <a href="">
@@ -176,9 +176,9 @@ and open the template in the editor.
                         </div>
                         <!--end description-->
                         <!--start image-->
-                        <div class="myCard">
-                            <div class="cardImg">
-                                <img src="img/card.png" />
+                        <div class="col-xs-12 col-sm-12 col-lg-6 myCard">
+                            <div >
+                                <center> <img class="cardImg" src="img/card.png" /> </center>
                             </div>
                             <div id="signup_card" class="card-content">
                                 <div class="card-title">

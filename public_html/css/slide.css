@@ -1,18 +1,18 @@
 .item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .thum{
     object-fit: contain;
-float : center;
-width : 100%;
-height: 90px;
+    float : center;
+    width : 60%;
+    height: 90px;
 }
 
 .thumnail{
@@ -25,4 +25,58 @@ height: 90px;
 
 .imgSlide{
     object-fit: contain;
+    max-height: 100%;
 }
+
+@media (max-width: 700px) {
+    .item {
+        height: 60vh;
+        min-height: 100px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .thum{
+        object-fit: contain;
+        float : center;
+        width : 90%;
+        height: 50px;
+    }
+
+    .thumnail{
+        padding: 25px auto;
+        float: center;
+        border-color: black;
+        margin: 15px auto;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .item {
+        height: 40vh;
+        min-height: 60px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .thum{
+        object-fit: contain;
+        float : center;
+        width : 90%;
+    }
+
+    .thumnail{
+        padding: 0px auto;
+        float: center;
+        border-color: black;
+        margin-top: 0px;
+    }
+}
+
