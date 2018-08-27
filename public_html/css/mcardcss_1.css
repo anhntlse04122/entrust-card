@@ -1,0 +1,448 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 26, 2018, 5:01:56 PM
+    Author     : Chino
+*/
+
+.wrapper{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    margin : 20px;
+}
+.aService{
+    padding: 15px;
+}
+
+.myHeader{
+    background: url(../img/download.png) no-repeat center center;
+    display: block;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+.mainContain{
+    margin: 0px auto;
+    padding: 0px 30px;
+}
+
+#myLogo{
+    width: 100px;
+    margin-top : 25px;
+    padding: auto auto;
+}
+
+.myCollapseButton{
+    margin-top: 45px;
+}
+
+
+.description {
+    margin-top : 20px;
+    margin-bottom: 100px;
+    padding-right: 25px;
+}
+
+.descriptionFooter {
+    margin-top : 15%;
+    margin-bottom: 100px;
+    float: left;
+    width: 55%;
+}
+
+
+.sloganHeader{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.28;
+    letter-spacing: -1.5px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.sloganDes{
+    font-size: 13px;
+    line-height: 1.28;
+    text-align: left;
+    color: #ffffff;
+}
+
+
+.signupHeader {
+    margin-top: -5%;
+    border-radius: 16px;
+    background-image: linear-gradient(to bottom, #ffdb40, #ffcf1e);
+    padding: 8% 35px 15px;
+    background-color: #ffcf1e;
+}
+
+
+
+.listServiceItems {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+.listService{
+    margin-top: 50px;
+}
+
+.serviceTitle{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a.serviceTitle{
+    color: black;
+}
+
+a.serviceTitle:hover{
+    font-style : italic;
+    text-decoration: none;
+}
+
+.serviceDescripton{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.serviceLocation{
+    float: left;
+}
+
+.servicePrice{
+    float: right;
+    font-size: 18px;
+    color: #ffcf1e;
+    font-weight: bold;
+}
+
+.introDescription{
+    float:center;
+    padding-top : 3%;
+}
+
+.text-yellow{
+    color: #ffcf1e;
+    padding-right: 10px;
+}
+
+.introServiceButton{
+    text-align: center;
+    margin:0 auto;
+    padding: 15px 20px;
+    margin-top: 30px;
+}
+
+.introService{
+    margin: 3% auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.greyBackground{
+    background-color: #EEEEEE
+}
+
+.main{
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer{
+    background: url(../img/download.png) no-repeat center center;
+    display: block;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+.card-content {
+    margin-top: -15%;
+    border-radius: 16px;
+    background-image: linear-gradient(to bottom, #ffdb40, #ffcf1e);
+    padding: 20% 35px 25px;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card-form input {
+    height: 42px;
+    width: 100%;
+    color: #58595b;
+    padding: 10px 0 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9a9fa8;
+}
+
+.card-form button {
+    border-radius: 4px;
+    border: none;
+    background-color: #525252;
+    padding: 18px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.slogan1 {
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffcf1e;
+    text-transform: uppercase;
+}
+
+.slogan2 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.28;
+    letter-spacing: -1.5px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.slogan3 {
+    font-size: 17px;
+    text-align: left;
+    color: #ffffff; }
+
+.signUpButton {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    color: #5c5d5f;
+    border-radius: 4px;
+    background-color: #ffcf1e;
+    padding: 14px 40px;
+    border: none;
+}
+
+.partner{
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.companies{
+    width: 1200px;
+    margin: 0px auto;
+    padding: 0px auto; 
+}
+
+a.buttonHeader{
+    color: black;
+}
+
+.introname{
+    padding-bottom: 20px;
+}
+
+.introImage{
+    width: 100%;
+    height : 350px;
+    object-fit: fill;
+}
+
+.quickServiceDescription{
+    margin: 3% auto;
+    padding-bottom: 40px;
+    padding-top: 0px;
+}
+
+.sitemap{
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.detailServiceInfo{
+    margin-bottom: 45px;
+    margin-top: 15px;
+}
+
+.labelInfo{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.detailPrice{
+    color: #ffcf1e;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+
+.h-100 {
+    height: 100%!important;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 20px;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.carousel-control.left {
+
+    height: 40px;
+    width: 40px;
+    border: 4px solid #FFFFFF;
+    margin: auto 100px auto auto;
+    background : none;
+    padding-right: 50px;
+   opacity: 0;
+}
+
+.carousel-control.right {
+ 
+    height: 40px;
+    width: 40px;
+    border: 4px solid #FFFFFF;
+    margin: auto auto auto 100px ;
+    background : none;
+      opacity: 0;
+}
+
+.navbar-inverse{
+    background: transparent;
+    border: none;
+}
+
+.navbar-toggle{
+    background-color: black;
+    color: white;
+}
+
+menuitem{
+    
+    
+}
+
+.nav>li {
+
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-left: 18px;
+    font-size: 15px;
+}
+
+.navHeader{
+    width: 8%;
+}
+#myNavbar{
+    width: 91%;
+    float: right;
+}
+
+.navbar-nav{
+    width: 100%;
+}
+
+.navbar-nav>li {
+ padding: auto 50px;
+}
+
+.navbar{
+    margin: auto auto;
+}
+
+.navButton{
+    float: right;
+    margin-right: 0px;
+}
+
+
+.cateMenu{
+    background-color: #ffdb40;
+    font-size: 18px;
+    width: 100%;
+}
+
+
+.cateMenuItems{
+    
+    text-align: center;
+}
+
+a.cateMenuItems{
+    color: #212529;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.containSer>.nav-tabs.nav-justified>.active>a {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.containSer>.nav>li>a:hover{
+    background-color: #FFCC00;
+    border: none;
+    font-weight: bold;
+}
+
+.cardImg{
+    max-width: 100%;
+object-fit: fill;
+}
+
+
+.intro{
+    padding-top: 40px;
+    padding-left: 4%;
+    padding-right: 4%;
+}

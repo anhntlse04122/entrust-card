@@ -11,7 +11,10 @@
   background-size:cover;
 }
 .slide-wrapper{display:inline;}
-.slide-wrapper .container{padding:0px;}
+.slide-wrapper .container{padding:0px;
+padding-bottom: 20px;
+padding-right: 20px;
+padding-top: 20px;}
 
 /*------------------------------ vertical bootstrap slider----------------------------*/
 
@@ -117,6 +120,8 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
     padding-right:0; 
     font-size:small;
     padding-left: 0;
+    height: 100vh;
+    background-color: #58595b;
   }  
   .affix-row, .affix-container, .affix-content{
     height: 100%;
@@ -124,8 +129,12 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
     margin-right: 0;    
   } 
   .affix-content{
-    background-color:white; 
+    background-color:#58595b; 
   } 
+  .navbar-default{
+      background-color: #58595b;
+      color: white;
+  }
   .sidebar-nav .navbar .navbar-collapse {
     padding: 0;
     max-height: none;
@@ -156,6 +165,7 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
     .affix-content .container .page-header{
     margin-top: 0;
   }  
+  
 }
 
 @media (min-width: 992px){
@@ -197,10 +207,27 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
     padding: 0;
   }
   .sidebar-nav .navbar li a:hover {
-    background-color: #428bca;
+    background-color: #696969;
     color: white;
   }
+  
+   .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #696969;
+    color: yellow;
+  }
+  
   .sidebar-nav .navbar li a > .caret {
     margin-top: 8px;
   }  
+  
+ .navbar-default .navbar-nav>.active>a {
+  background-color: #58595b;
+    color: yellow;
+  }
+  
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+  
+
 }
