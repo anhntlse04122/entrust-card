@@ -39,6 +39,21 @@ $('#myCarousel').bind('mousewheel DOMMouseScroll', function(e){
     
 });
     
+ // collapse menu after click  
+$(".navbar-nav li a").click(function(event) {
+    if (!$(this).parent().hasClass('dropdown'))
+        $(".navbar-collapse").collapse('hide');
+});
+
+
+// active menu follow slide
+
+ $('.nav li').click(function() {
+        $('.nav li').removeClass('active');
+        $(this).addClass('active');
+ });
+ 
+ 
 });
 //animated  carousel start
 $(document).ready(function(){
@@ -53,7 +68,7 @@ $(function(){
 				});
 			}
 		});
-			 $('.item1.active img').animateCss('slideInDown');
+			 
 			 $('.item1.active h2').animateCss('zoomIn');
 			 $('.item1.active p').animateCss('fadeIn');
 			 
@@ -76,17 +91,27 @@ $(function(){
 	
 // add animation type  from animate.css on the element which you want to animate
 
-		$('.item1 img').animateCss('slideInDown');
 		$('.item1 h2').animateCss('zoomIn');
 		$('.item1 p').animateCss('fadeIn');
 		
-		$('.item2 img').animateCss('zoomIn');
 		$('.item2 h2').animateCss('swing');
 		$('.item2 p').animateCss('fadeIn');
 		
-		$('.item3 img').animateCss('fadeInLeft');
 		$('.item3 h2').animateCss('fadeInDown');
 		$('.item3 p').animateCss('fadeIn');
     });
 });
 
+
+$(document).ready(function(){
+$('#myCarousel').bind('slide.bs.carousel', function (e) {
+    console.log('slide event!');
+if($('.firstOl').hasClass('active')){
+$('body').addClass('slide1')
+}else if($('.secondOl').hasClass('active')){
+$('body').addClass('slide2')
+}else if($('.thirdOl').hasClass('active')){
+$('body').addClass('slide3')
+}
+});
+})
