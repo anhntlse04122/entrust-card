@@ -3,7 +3,7 @@ html,body{
     font-family: Quicksand;
     padding: 0px;
     margin: 0px;
-
+    font-size: 15px;
 }
 .carousel-inner,.carousel,.item,.container,.fill {
     height:100%;
@@ -15,6 +15,11 @@ html,body{
     padding: 0px;
     margin: 0px;
 
+}
+
+.h{
+    font-size: 14px;
+    font-style: italic
 }
 
 
@@ -56,7 +61,7 @@ padding-left: 10px;
 
 .item {
     color:white; 
-/*    text-align:center;*/
+    /*    text-align:center;*/
     /*background-color:  rgba(0, 0, 0, 0.5);*/
     padding-top: 0px;
     padding-bottom: 0px;}
@@ -67,8 +72,8 @@ padding-left: 10px;
     height: 100%;      
 }
 
-.item  h2{font-size:40px; animation-delay:1s;animation-duration:1s; color: #ffcf1e}
-.item  p{animation-delay:1.5s;animation-duration:1s; width:70%; font-size: 18px;}
+.item  h2{font-size:40px; animation-delay:1s;animation-duration:1s; color: #ffcf1e; width:80%;}
+.item  p{animation-delay:1.5s;animation-duration:1s; width:80%; font-size: 16px;}
 .item .fill{padding:0px; display:table; }
 .item .inner-content{display: table-cell;vertical-align: middle; padding: 0px; background-color: rgba(0, 0, 0, 0.5); }
 
@@ -91,10 +96,15 @@ padding-left: 10px;
     -moz-animation-delay:0.3s;
     -ms-animation-delay:0.3s; }
 
+.item .carousel-desc {width:100%;}
 
-@media(max-width:991px)
+@media(max-width:1000px)
 {
-    .item .carousel-desc {width:80%;}
+    .logo-img{
+        width: 70px;
+        margin-top: 15px;
+        margin-right: 25px;
+    }
 }
 @media(max-width:768px)
 {
@@ -106,27 +116,40 @@ padding-left: 10px;
 {
     .item  h2{font-size:30px;}
     .item .carousel-desc p{width:100%;}
+    .logo-img{
+        width: 70px;
+        margin-top: 15px;
+        margin-right: 25px;
+    }
 }
 
 .text-top-right{
-text-align: right;
-padding-right: 25px;
-float: right;
-padding-top: 15px;
+    text-align: right;
+    padding-right: 25px;
+    float: right;
+    padding-top: 15px;
 }
 
+
 .text-left-bottom{
-text-align: left;
-padding-left: 25px;
-float: left;
-padding-bottom: 15px;
+    text-align: left;
+    padding-left: 25px;
+    float: left;
+    padding-bottom: 15px;
 }
 
 .text-top-right p{
-   text-align: right;
-padding-right: 25px;
-float: right;
-padding-top: 15px; 
+    text-align: right;
+    padding-right: 25px;
+    float: right;
+    padding-top: 15px; 
+}
+
+.text-top-right h2{
+    text-align: right;
+    padding-right: 25px;
+    float: right;
+    padding-top: 15px; 
 }
 
 /* make sidebar nav vertical */ 
@@ -279,6 +302,7 @@ nav:hover .forAnimate{
         padding-left : 15px;
         height: 100%;
     }
+    .item  p{font-size: 14px;}
 }
 
 
@@ -299,7 +323,6 @@ nav:hover .forAnimate{
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    font-style: italic;
     color: #ffcf1e;
 }
 
@@ -360,7 +383,34 @@ nav:hover .forAnimate{
 }
 
 .logo-img{
+    width: 120px;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.contact{
+    padding-left: 100px;
+}
+
+.form-subcrible{
+    border-radius: 10px;
+    width: 100%;
     height: 50px;
-margin-top: 20px;
-margin-right: 25px;
+}
+
+.btn-subcrible{
+     background-color:#ffcf1e;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    width: 90%;
+    height: 50px;
+}
+
+.contact-item{
+    padding-top: 50px;
+}
+
+.contact-item-header{
+    color: #ffcf1e;
 }
