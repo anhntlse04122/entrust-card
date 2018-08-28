@@ -1,7 +1,7 @@
 $(document).ready(function(){
 // invoke the carousel
     $('#myCarousel').carousel({
-      interval:6000
+      interval:5000
     });
 
 // scroll slides on mouse scroll 
@@ -36,6 +36,7 @@ $('#myCarousel').bind('mousewheel DOMMouseScroll', function(e){
     $(".carousel").on("touchend", function(){
             $(this).off("touchmove");
     });
+    
 });
     
 });
@@ -59,6 +60,7 @@ $(function(){
 });
 	
 //to start animation on  mousescroll , click and swipe
+
 
 
  
@@ -87,3 +89,4 @@ $(function(){
 		$('.item3 p').animateCss('fadeIn');
     });
 });
+

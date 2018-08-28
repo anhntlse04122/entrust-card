@@ -7,9 +7,9 @@
         <title>Animated Vertical Carousel</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -19,141 +19,281 @@
 
     </head>
     <body>
-        <div class="row affix-row">
-            <!--start div menu-->
-    <div class="col-sm-3 col-md-2 affix-sidebar">
-		<div class="sidebar-nav">
-  <div class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      </button>
-      <span class="visible-xs navbar-brand"><img src="img/logo.png" alt="" style="width: 50px;  padding-bottom: 15px;" /></span>
-    </div>
-    <div class="navbar-collapse collapse sidebar-navbar-collapse">
-      <ul class="nav navbar-nav" id="sidenav01">
-        <li class="active">
-          <a href="#" data-toggle="collapse" data-target="#toggleDemo0" data-parent="#sidenav01" class="collapsed">
-              <img src="img/logo.png" alt="" style="width:100px;"/>
-          </a>
-          <div class="collapse" id="toggleDemo0" style="height: 0px;">
-            <ul class="nav nav-list">
-              <li><a href="#">ProfileSubMenu1</a></li>
-              <li><a href="#">ProfileSubMenu2</a></li>
-              <li><a href="#">ProfileSubMenu3</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a href="#" data-toggle="collapse" data-target="#toggleDemo" data-parent="#sidenav01" class="collapsed">
-          <span class="glyphicon glyphicon-cloud"></span> Submenu 1 <span class="caret pull-right"></span>
-          </a>
-          <div class="collapse" id="toggleDemo" style="height: 0px;">
-            <ul class="nav nav-list">
-              <li><a href="#">Submenu1.1</a></li>
-              <li><a href="#">Submenu1.2</a></li>
-              <li><a href="#">Submenu1.3</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="active">
-          <a href="#" data-toggle="collapse" data-target="#toggleDemo2" data-parent="#sidenav01" class="collapsed">
-          <span class="glyphicon glyphicon-inbox"></span> Submenu 2 <span class="caret pull-right"></span>
-          </a>
-          <div class="collapse" id="toggleDemo2" style="height: 0px;">
-            <ul class="nav nav-list">
-              <li><a href="#">Submenu2.1</a></li>
-              <li><a href="#">Submenu2.2</a></li>
-              <li><a href="#">Submenu2.3</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Normalmenu</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> WithBadges <span class="badge pull-right">42</span></a></li>
-        <li><a href=""><span class="glyphicon glyphicon-cog"></span> PreferencesMenu</a></li>
-      </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-	</div>
-            <!--end div menu-->
-            <!--start div slide-->
-	<div class="col-sm-9 col-md-10 affix-content">
-                    <!--start slide-->
         <section class="slide-wrapper">
-            <div class="container">
-                <div id="myCarousel" class="carousel slide">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
+            <div class="row carousel slide" id="myCarousel" >
+                <!--start div menu-->
+                <div class="col-sm-2">
+                    <nav class="navbar navbar-default sidebar" role="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item item1 active">
-                            <div class="fill" style="background-image: url('img/banner1.jpg');">
-                                <div class="inner-content">
-                                    <div class="carousel-img">
-                                        <img src="img/banner1.jpg" alt="sofa" class="img img-responsive" />
-                                    </div>
-                                    <div class="carousel-desc">
+                                <span class="navbar-brand"><img src="img/logo.png" alt="" style="height: 90px;" /></span>
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>    
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li data-target="#myCarousel" data-slide-to="1"  class="active"><a href="#">Về chúng tôi</a></li>         
+                                    <li data-target="#myCarousel" data-slide-to="2" ><a href="#">Đối tác</a></li>        
+                                    <li data-target="#myCarousel" data-slide-to="3" ><a href="#">Y tế - Sức khoẻ - Dược mỹ phẩm</a></li>
+                                    <li data-target="#myCarousel" data-slide-to="4" ><a href="#">Du học - Giáo dục</a></li>
+                                    <li data-target="#myCarousel" data-slide-to="5" ><a href="#">Dịch vụ Hàng không</a></li>
+                                    <li data-target="#myCarousel" data-slide-to="6" ><a href="#">Đầu tư tài sản có giá trị lớn</a></li>
+                                    <li data-target="#myCarousel" data-slide-to="7" ><a href="#">Mua sắm - Ẩm thực</a></li>
+                                    <li><hr/></li>
+                                    <li data-toggle="modal" data-target="#SignupPartnerModal" ><a href="#">Đăng kí đối tác</a></li>
+                                    <li data-toggle="modal" data-target="#SignupCardModal" ><a href="#">Đăng kí thẻ VietMaslow</a></li>
+                                    <li><hr/></li>
+                                    <li ><a href="#">Liên hệ</a></li>
+                                    <li ><a href="#">
+                                            <img class="banner-icon" src="img/fb.png" />
+                                            <img class="banner-icon" src="img/mail.png" />
+                                            <img class="banner-icon" src="img/location.png" />
+                                        </a></li>
 
-                                        <h2>Modern Designer Sofa</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elit ipsum, scelerisque non semper eu, aliquet vel odio. Sed auctor id purus nec tristique. Donec euismod, urna vel dapibus tristique, dolor arcu ultrices lectus, nec pulvinar est turpis sit amet felis. Duis interdum purus quam, vitae cursus erat ornare at. Donec congue mi a ipsum tincidunt, imperdiet vehicula odio rutrum. Nam porta vulputate magna, id pretium lectus iaculis eu. Ut ut viverra libero.</p>
-
-                                    </div>
-                                </div>
+                                </ul>
                             </div>
                         </div>
-                        <div class="item item2">
-                            <div class="fill" style="background-image: url('img/banner2.jpg');">
-                                <div class="inner-content">
-                                    <div class="carousel-img">
-                                        <img src="img/banner2.jpg" alt="white-sofa" class="img img-responsive" />
-                                    </div>
-                                    <div class="carousel-desc">
+                    </nav>
+                </div>
+                <!--end div menu-->
+                <!--start div slide-->
+                <div class="col-sm-10 affix-content">
+                    <!--start slide-->
 
-                                        <h2>Vintage Style Sofa</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elit ipsum, scelerisque non semper eu, aliquet vel odio. Sed auctor id purus nec tristique. Donec euismod, urna vel dapibus tristique, dolor arcu ultrices lectus, nec pulvinar est turpis sit amet felis. Duis interdum purus quam, vitae cursus erat ornare at. Donec congue mi a ipsum tincidunt, imperdiet vehicula odio rutrum. Nam porta vulputate magna, id pretium lectus iaculis eu. Ut ut viverra libero.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item item3">
-                            <div class="fill" style="background-image: url('img/banner3.png');">
-                                <div class="inner-content">
-                                    <div class="col-md-6">
-
-                                        <div class="carousel-img">
-                                            <img src="img/banner3.png" alt="sofa" class="img img-responsive" />
+                    <div class="slide-container">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item item1 active">
+                                <div class="fill" style="background-image: url('img/banner8.png');">
+                                    <div class="inner-content">
+                                        <div class="carousel-desc text-left-bottom">
+                                            <h2>Hàng ngàn ưu đãi cho cuộc sống tiện nghi</h2>
+                                            <p>Chi tiêu có kế hoạch, tiết kiệm thời gian, tiết kiệm chi phí, tận hưởng
+                                                cuộc sống chậm rãi và trọn vẹn hơn cùng VietMaslow</p>
                                         </div>
                                     </div>
-
-                                    <div class="col-md-6 text-left">
-                                        <div class="carousel-desc">
-
-                                            <h2>Stylish Sofa</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elit ipsum, scelerisque non semper eu, aliquet vel odio. Sed auctor id purus nec tristique. Donec euismod, urna vel dapibus tristique, dolor arcu ultrices lectus, nec pulvinar est turpis sit amet felis. Duis interdum purus quam, vitae cursus erat ornare at. Donec congue mi a ipsum tincidunt, imperdiet vehicula odio rutrum. Nam porta vulputate magna, id pretium lectus iaculis eu. Ut ut viverra libero.</p>
-
+                                </div>
+                            </div>
+                            <div class="item item2">
+                                <div class="fill" style="background-image: url('img/banner1.png');">
+                                    <div class="inner-content">
+                                        <div class="carousel-desc text-left-bottom">
+                                            <h2>Về chúng tôi - VietMaslow</h2>
+                                            <p>VietMaslow là cầu nối mang khách hàng tới với các dịch vụ hỗ trợ tiện ích chất lượng cao và đa dạng thông qua việc xây dựng hệ sinh thái các đối tác trong 5 nhóm lĩnh vực lớn là Y tế - Sức khoẻ - Dược mỹ phẩm, Du học - Giáo dục, Dịch vụ Hàng không, Đầu tư tài sản có giá trị lớn; Mua sắm và Ẩm thực. VietMaslow cam kết mang đến lợi ích tối đa cho khách hàng và đối tác, tiết kiệm thời gian, tiết kiệm chi phí, từ đó tạo dựng một phong cách sống mới, chi tiêu có kế hoạch và tận hưởng cuộc sống trọn vẹn hơn.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="item item1">
+                                <div class="fill" style="background-image: url('img/banner2.jpg');">
+                                    <div class="inner-content">
+                                        <div class="carousel-desc text-left-bottom">
+                                            <h2>Đối tác</h2>
+                                            <p>Thành công của đối tác cũng chính là thành công của chúng tôi. Lựa chọn những đối tác uy tín, cung cấp sản phẩm dịch vụ chất lượng cao nhằm mang lại những giá trị thiết thực cho khách hàng là mục tiêu của VietMaslow.</p>
+                                            <p>Đối tác sẽ được cam kết hỗ trợ các quyền lợi tài chính, truyền thông, hỗ trợ các chương trình xúc tiến bán hàng gia tăng doanh số, tiết kiệm và tối ưu chi phí tiếp thị.</p>
+                                            <p>
+                                                <img class="logo-img" src="img/logo1.png" alt=""/>
+                                                <img class="logo-img" src="img/logo2.png" alt=""/>
+                                                <img class="logo-img" src="img/logo3.png" alt=""/>
+                                            </p>
+                                            <p>
+                                                <button class="banner-btn">Đăng kí tìm hiểu thêm thông tin</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item3">
+                                <div class="fill" style="background-image: url('img/banner3.png');">
+                                    <div class="inner-content">
+                                        <div class="carousel-desc text-left-bottom">
+                                            <h2>Y tế - Sức khoẻ - Dược mỹ phẩm</h2>
+                                            <p>Hỗ trợ các dịch vụ khám chữa bệnh trong nước, quốc tế, xếp hàng lấy số, làm thủ tục giảm thiểu thời gian chờ đợi
+                                                Tư vấn mua và sử dụng dược phẩm, thực phẩm chức năng, thiết bị y tế cá nhân 
+                                                Ưu đãi các dịch vụ chăm sóc sức khoẻ, làm đẹp, thẩm mỹ, golf, fitness </p>
+                                            <p>
+                                                <button class="banner-btn">Danh sách đối tác & ưu đãi</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item1">
+                                <div class="fill" style="background-image: url('img/banner4.jpg');">
+                                    <div class="inner-content">
+                                        <div class="carousel-desc text-top-right">
+                                            <h2>Giáo dục - Du học</h2>
+                                            <p>Cung cấp, hỗ trợ danh mục các chương trình tư vấn du học bao gồm du học hệ trung học, đại học và sau đại học tại Mỹ và 
+                                                các nước châu Âu; du học Nhật Bản; du học nghề tại Đức; 
+                                                đào tạo tiếng Hàn thông qua hệ thống các đối tác liên kết 
+                                                hàng đầu trong lĩnh vực tư vấn du học trên cả nước
+                                                Hỗ trợ dịch vụ nộp học phí trong và ngoài nước.
+                                            </p>
+                                            <p><button class="banner-btn">Tham khảo ngay</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item1">
+                                <div class="fill" style="background-image: url('img/banner5.jpg');">
+                                    <div class="inner-content">
+                                        <div class="carousel-desc text-top-right">
+                                            <h2 >1000+ phòng chờ cao cấp trên toàn thế giới</h2>
+                                            <p>Dịch vụ hỗ trợ hàng không cao cấp cho bạn trải nghiệm bay trọn vẹn.
+                                                Cung cấp vé của các hãng hàng không trong nước và quốc tế
+                                                Hỗ trợ thủ tục xuất nhập cảnh nhanh, visa nhanh, checkin nhanh
+                                                Dịch vụ đón tiễn, nhắc lịch bay</p>
+                                            <p ><button class="banner-btn">Lên lịch bay ngay</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item1">
+                                <div class="fill" style="background-image: url('img/banner6.jpg');">
+                                    <div class="inner-content ">
+                                        <div class="carousel-desc text-left-bottom">
+                                            <h2>Đầu tư tài sản giá trị lớn</h2>
+                                            <p>Thông qua hợp tác với các nhà cung cấp chuyên nghiệp hàng đầu trong lĩnh vực kinh doanh tài sản có giá trị lớn như bất động sản, du thuyền, xe hơi… VietMaslow hỗ trợ khách hàng lên kế hoạch đầu tư vào các danh mục, loại hình tài sản đa dạng, mang lại lợi nhuận và giá trị sử dụng tối đa.</p>
+                                            <p><button class="banner-btn">Danh mục đối tác</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item2">
+                                <div class="fill" style="background-image: url('img/banner7.png');">
+                                    <div class="inner-content">
+                                        <div class="carousel-desc text-left-bottom">
+                                            <h2>Mua sắm - Ẩm thực</h2>
+                                            <p>Cam kết mang lại những ưu đãi tốt nhất hỗ trợ khách hàng khi đi mua sắm hàng hoá từ những món tiêu dùng hàng ngày tới xa xỉ phẩm hay khi đi trải nghiệm ẩm thực trên khắp Việt nam, VietMaslow và các đối tác uy tín trong hệ sinh thái sẽ luôn đồng hành cùng bạn.</p>
+                                            <p><button class="banner-btn">Tham khảo danh sách ưu đãi ngay</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+
+                        </div>
+                    </div>
+
+                    <!--end slide-->
+                </div>
+                <!--end div slide-->
+            </div>  
+        </section>
+
+        <!-- Modal form tao doi tac -->
+        <div class="modal fade" id="SignupPartnerModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Đăng ký trở thành đối tác của hệ sinh thái VietMaslow</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Cảm ơn anh chị đã tin tưởng và mong muốn trở thành đối tác cung cấp 
+                            dịch vụ, sản phẩm, ưu đãi trong hệ sinh thái VietMaslow. Vui lòng để lại 
+                            thông tin, chúng tôi sẽ liên hệ tư vấn, hỗ trợ để thương hiệu của anh chị
+                            sớm đến được với khách hàng VietMaslow</p>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 form-group">
+                                <label for="companyName">Công ty/đơn vị</label>
+                                <input type="text" class="form-control" id="companyName">
+                            </div>
+                            <div class="col-md-6 col-sm-12 form-group">
+                                <label for="phone">Mobile</label>
+                                <input type="text" class="form-control" id="phone">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 form-group">
+                                <label for="name">Họ và tên</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-md-6 col-sm-12 form-group">
+                                <label for="mail">Email</label>
+                                <input type="email" class="form-control" id="mail">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 form-group">
+                                <label for="role">Chức danh/bộ phận</label>
+                                <input type="text" class="form-control" id="role">
+                            </div>
+                            <div class="col-md-6 col-sm-12 form-group">
+                                <label for="industry">Lĩnh vực hoạt động</label>
+                                <input type="text" class="form-control" id="industry">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 form-group">
+                                <label for="haveCard">Anh/chị đã có thẻ VietMaslow chưa?</label>
+                                <p> 
+                                    <label class="radio-inline"><input type="radio" name="haveCard" checked>Chưa có</label>
+                                    <label class="radio-inline"><input type="radio" name="haveCard">Đã có</label>
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-12 form-group">
+                                <textarea rows="3" style="width: 100%"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12"><button class="form-btn">Đăng kí</button></div>
+                        </div>
                     </div>
                 </div>
+
             </div>
-        </section>
-                    <!--end slide-->
         </div>
-            <!--end div slide-->
-        </div>    
+        <!--end form tao doi tac-->
+        <!-- Modal form tao the -->
+        <div class="modal fade" id="SignupCardModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Đăng kí thẻ VietMaslow</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Đăng ký ngay để nhận được các ưu đãi từ hệ sinh thái VietMaslow. 
+                            Chúng tôi sẽ liên hệ theo thông tin bạn cung cấp để tư vấn hỗ trợ mở thẻ.</p>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="name">Họ và tên</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="name">Mobile</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="mail">Email</label>
+                                <input type="email" class="form-control" id="mail">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="haveCard">Bạn đã có Thẻ hoặc tài khoản của ngân hàng SHB chưa?</label>
+                                <p> 
+                                    <label class="radio-inline"><input type="radio" name="haveCard" checked>Chưa có</label>
+                                    <label class="radio-inline"><input type="radio" name="haveCard">Đã có</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12"><button class="form-btn">Đăng kí</button></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--end form tao the-->
+
+
     </body>
 </html>
