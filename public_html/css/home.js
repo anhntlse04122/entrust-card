@@ -46,7 +46,7 @@ $(".navbar-nav li a").click(function(event) {
 });
 
 
-// active menu follow slide
+// active menu after click
 
  $('.nav li').click(function() {
         $('.nav li').removeClass('active');

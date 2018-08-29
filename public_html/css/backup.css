@@ -6,7 +6,7 @@ html,body{
     font-size: 15px;
 }
 .carousel-inner,.carousel,.item,.container,.fill {
-    height:100%;
+    /*    height:100%;*/
     width:100%;
     background-position:center center;
     background-size:cover;
@@ -75,7 +75,7 @@ padding-left: 10px;
 .item  h2{font-size:40px; animation-delay:1s;animation-duration:1s; color: #ffcf1e; width:80%;}
 .item  p{animation-delay:1.5s;animation-duration:1s; width:80%; font-size: 16px;}
 .item .fill{padding:0px; display:table; }
-.item .inner-content{display: table-cell;vertical-align: middle; padding: 0px; background-color: rgba(0, 0, 0, 0.5); }
+.item .inner-content{display: table-cell;vertical-align: middle; padding: 0px; background-color: rgba(0, 0, 0, 0.5); height: 100vh; }
 
 .item1 .item2 .item3 .carousel-img img , .item1.active .item2.active .item3.active .carousel-img img{max-height:300px;}
 .item1.active .item2.active .item3.active .carousel-img img.animated{
@@ -98,7 +98,7 @@ padding-left: 10px;
 
 .item .carousel-desc {width:100%;}
 
-@media(max-width:1000px)
+@media(max-width:990px)
 {
     .logo-img{
         width: 70px;
@@ -111,6 +111,14 @@ padding-left: 10px;
     .item .carousel-img img, .item.active .carousel-img img{max-height:155px;}
     .item  h2{font-size:30px; margin-top:0px;}
     .item .carousel-desc p{width:100%; font-size:12px;}
+
+    .affix-content{
+        padding: 0px !important ;
+    }
+
+    .contact{
+        padding-left: 30px;
+    }
 }
 @media(max-width:480px)
 {
@@ -123,19 +131,18 @@ padding-left: 10px;
     }
 }
 
-.text-top-right{
-    text-align: right;
-    padding-right: 25px;
-    float: right;
-    padding-top: 15px;
-}
 
-
-.text-left-bottom{
+.text-left-bottom h2{
     text-align: left;
     padding-left: 25px;
     float: left;
-    padding-bottom: 15px;
+}
+
+.text-left-bottom p{
+    text-align: left;
+    padding-left: 25px;
+    float: left;
+    padding-top: 15px;
 }
 
 .text-top-right p{
@@ -268,7 +275,7 @@ nav:hover .forAnimate{
 }
 
 .affix-content{
-    height: 100vh;
+    /*    height: 100vh;*/
     padding: 0px !important ;
 }
 
@@ -286,23 +293,69 @@ nav:hover .forAnimate{
     .navbar-inverse .navbar-toggle {
         border: unset;
     }
-
+    .navbar-nav{
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
     .navbar-toggle {
         margin-right: 0;
         margin-top: 35px;
-        position: relative;
         float: right;
+        position: fixed;
+        right: 0;
+        top : 0;
+        z-index: 1030;
     }
 
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         border: none;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: 1030;
+        background-color: #58595b;
     }
 
+    .sidebar{
+        padding-bottom: 15px;
+    }
+    
     .slide-container{
-        padding-left : 15px;
         height: 100%;
     }
     .item  p{font-size: 14px;}
+
+    .contact-item{
+        font-size: 12px;
+        padding-right: 5%;
+    }
+
+    .form-subcrible{
+        margin-bottom: 5px;
+    }
+
+
+
+    .text-top-right p{
+        text-align: left;
+        padding-left: 25px;
+        float: left;
+        padding-bottom: 15px;
+    }
+
+    .text-top-right h2{
+        text-align: left;
+        padding-left: 25px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    .h{
+        font-size: 12px;
+    }
 }
 
 
@@ -383,28 +436,26 @@ nav:hover .forAnimate{
 }
 
 .logo-img{
-    width: 120px;
+    width: 16%;
     margin-top: 20px;
     margin-right: 25px;
 }
 
-.contact{
-    padding-left: 100px;
-}
 
 .form-subcrible{
     border-radius: 10px;
-    width: 100%;
     height: 50px;
+    width: 90%;
+    color: black;
 }
 
 .btn-subcrible{
-     background-color:#ffcf1e;
+    background-color:#ffcf1e;
     border: none;
     border-radius: 10px;
     color: black;
-    width: 90%;
     height: 50px;
+    width: 90%;
 }
 
 .contact-item{
@@ -414,3 +465,12 @@ nav:hover .forAnimate{
 .contact-item-header{
     color: #ffcf1e;
 }
+
+.form-group input,textarea{
+    background: #58595b;
+}
+
+.close{
+    color: white;
+}
+
