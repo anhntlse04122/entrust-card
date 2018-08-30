@@ -87,19 +87,20 @@ html,body{
 
 .item .carousel-desc {width:100%;}
 
-@media(max-width:990px)
+@media(max-width:900px)
 {
     .logo-img{
         width: 70px;
         margin-top: 15px;
         margin-right: 25px;
     }
+    
 }
 @media(max-width:768px)
 {
     .item .carousel-img img, .item.active .carousel-img img{max-height:155px;}
     .item  h2{font-size:30px; margin-top:0px;}
-    .item .carousel-desc p{width:100%; font-size:12px;}
+    .item .carousel-desc p{width:100%; font-size:15px;}
 
     .affix-content{
         padding: 0px !important ;
@@ -155,6 +156,23 @@ html,body{
     padding: 10px 10px 0 10px;
 }
 
+.img-brand{
+    height: 100px;
+}
+
+@media(max-width:900px)
+{
+    .img-brand{
+        padding-bottom: 40px;
+    }
+    
+    .navbar-collapse{
+        padding-left: 0px;    }
+    .container-fluid{
+        padding-left: 0px;  
+    }
+}
+
 @media (min-width: 901px) {
 
     .main{
@@ -180,7 +198,7 @@ html,body{
         height: auto;
     }
 
-    nav.sidebar a{
+    .navbar-brand{
         padding-right: 13px;
     }
 
@@ -278,6 +296,32 @@ nav:hover .forAnimate{
     height: auto;
 }
 
+.form-subcrible{
+    border-radius: 10px;
+    height: 50px;
+    width: 90%;
+    color: black;
+}
+
+.btn-subcrible{
+    background-color:#ffcf1e;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    height: 50px;
+    width: 90%;
+}
+
+.contact-item{
+    padding-top: 50px;
+}
+
+.contact-item-header{
+    color: #ffcf1e;
+}
+
+
+
 @media screen and (max-width: 768px){
     .navbar-inverse .navbar-toggle {
         border: unset;
@@ -287,15 +331,19 @@ nav:hover .forAnimate{
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
+
     .navbar-toggle {
         margin-right: 0;
-        margin-top: 35px;
+        margin-top: 20px;
         float: right;
         position: fixed;
         right: 0;
         top : 0;
-        z-index: 1030;
+        z-index: 930;
+    }
+    .navbar-header{
+        padding-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
@@ -308,10 +356,16 @@ nav:hover .forAnimate{
         background-color: #58595b;
     }
 
-    .sidebar{
-        padding-bottom: 15px;
+    .img-brand{
+        height: 70px;
+        padding-bottom: 20px;
     }
-    
+
+    .sidebar{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
     .slide-container{
         height: 100%;
     }
@@ -320,14 +374,22 @@ nav:hover .forAnimate{
     .contact-item{
         font-size: 12px;
         padding-right: 5%;
+        padding-top: 15px;
     }
 
     .form-subcrible{
         margin-bottom: 5px;
+        height: 40px;
     }
 
-
-
+    .btn-subcrible{
+        height: 40px;
+    }
+    
+    .test{
+        font-size: 12px;
+    }
+    
     .text-top-right p{
         text-align: left;
         padding-left: 25px;
@@ -371,7 +433,8 @@ nav:hover .forAnimate{
 .banner-icon{
     width: 25px;
     height: 25px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 0px;
 }
 
 .banner-btn{
@@ -431,29 +494,6 @@ nav:hover .forAnimate{
 }
 
 
-.form-subcrible{
-    border-radius: 10px;
-    height: 50px;
-    width: 90%;
-    color: black;
-}
-
-.btn-subcrible{
-    background-color:#ffcf1e;
-    border: none;
-    border-radius: 10px;
-    color: black;
-    height: 50px;
-    width: 90%;
-}
-
-.contact-item{
-    padding-top: 50px;
-}
-
-.contact-item-header{
-    color: #ffcf1e;
-}
 
 .form-group input,textarea{
     background: #58595b;
@@ -462,4 +502,5 @@ nav:hover .forAnimate{
 .close{
     color: white;
 }
+
 
