@@ -188,28 +188,19 @@ $(document).ready(function () {
             $('#s8').removeClass('active');
         }
     });
-})
+});
 
 $(document).ready(function(){
 
 
 $('.owl-carousel').owlCarousel({
-    loop:true,
+    loop:false,
     margin:10,
     responsiveClass:true,
     dots : true,
     nav : false,
-    responsive:{
-        400:{
-            items:1,
-            nav:true
-        },
-        1000:{
-            items:5,
-            nav:false,
-            loop:false
-        }
-    }
-})
+    items : 5
 
-})
+});
+
+});
