@@ -11,7 +11,7 @@ html,body{
     .col-sm-2-5{
         width: 19%;
         float: left;
-        
+
     }
     .col-sm-10-5{
         width: 81%;
@@ -24,7 +24,7 @@ html,body{
 
 /*slide css */
 .carousel-inner,.carousel,.item,.container,.fill {
-        height:100%;
+    height:100%;
     width:100%;
     background-position:center center;
     background-size:cover;
@@ -110,7 +110,7 @@ html,body{
 {
     .item .carousel-img img, .item.active .carousel-img img{max-height:155px;}
     .item  h2{font-size:30px; margin-top:0px;}
-    .item .carousel-desc p{width:100%; font-size:15px;}
+    .item .carousel-desc p{width:100%; font-size:16px;}
 
     .affix-content{
         padding: 0px !important ;
@@ -183,15 +183,15 @@ html,body{
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 768px) {
     .slide-container{
-        padding : 15px;
+        padding : 35px 15px;
         height: 100%;
     }
 }
 
 .affix-content{
-        height: 100vh;
+    height: 100vh;
     padding: 0px !important ;
 }
 
@@ -215,13 +215,20 @@ html,body{
     padding-top: 50px;
 }
 
+.contact-item p{
+    font-size: 14px;
+}
+
 .contact-item-header{
     color: #ffcf1e;
+    font-size: 18px !important;
+    font-family: UTM Neo Sans Intel;
 }
 
 @media screen and (max-width: 768px){
     .slide-container{
         height: 100%;
+        
     }
     .item  p{font-size: 14px;}
 
@@ -279,6 +286,35 @@ html,body{
     margin-right: 25px;
 }
 
+.form-dropdown{
+    background-color: #58595b;
+    color: white;
+    border: 1px solid white;
+    width: 100%
+}
+
+.btn{
+    text-align: right;
+}
+
+.arrow-prev{
+    position: relative;
+    text-align: center;  
+    margin-bottom: -15px;
+    margin-top: -20px;
+    z-index: 1000;
+}
+
+.arrow-next{
+    position: relative;
+    text-align: center;  
+    margin-top: -15px;
+}
+
+.arrow{
+    width: 35px;
+    height: 35px;
+}
 
 /* end slide css */
 
@@ -407,8 +443,8 @@ nav:hover .forAnimate{
 
 .navbar-default{
     border: none;
-/*    background-color: #58595b;*/
-background: transparent;
+    /*    background-color: #58595b;*/
+    background: transparent;
 }
 
 .navbar-header{
@@ -532,9 +568,12 @@ background: transparent;
 
 .form-group input,textarea{
     background: #58595b;
+    color: #ffcf1e;
 }
 
 .close{
-    color: white;
+    color: #ffcf1e;
+    font-size: 30px;
+    opacity: 0.8;
 }
 

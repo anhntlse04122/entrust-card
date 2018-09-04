@@ -183,9 +183,9 @@ html,body{
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 768px) {
     .slide-container{
-        padding : 15px;
+        padding : 35px 15px;
         height: 100%;
     }
 }
@@ -228,6 +228,7 @@ html,body{
 @media screen and (max-width: 768px){
     .slide-container{
         height: 100%;
+        
     }
     .item  p{font-size: 14px;}
 
@@ -295,6 +296,26 @@ html,body{
 .btn{
     text-align: right;
 }
+
+.arrow-prev{
+    position: relative;
+    text-align: center;  
+    margin-bottom: -15px;
+    margin-top: -20px;
+    z-index: 1000;
+}
+
+.arrow-next{
+    position: relative;
+    text-align: center;  
+    margin-top: -15px;
+}
+
+.arrow{
+    width: 35px;
+    height: 35px;
+}
+
 /* end slide css */
 
 /* menu css */
