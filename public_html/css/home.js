@@ -204,3 +204,15 @@ $('.owl-carousel').owlCarousel({
 });
 
 });
+
+$(document).ready(function(){
+
+$('#register-parter').click(function() {
+    $('#SignupPartnerModal').modal('hide');
+});
+
+$('#register-card').click(function() {
+    $('#SignupCardModal').modal('hide');
+});
+
+});

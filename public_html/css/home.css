@@ -1,5 +1,5 @@
 html,body{
-    background-image:   url(../img/download.png);
+    background-image:   url(../img/bg.png);
     font-family: Quicksand;
     padding: 0px;
     margin: 0px;
@@ -45,12 +45,35 @@ html,body{
 
 /*---vertical bootstrap slider----*/
 
-.carousel-inner> .item.next ,  .carousel-inner > .item.active.right{ transform: translateY(100%); -webkit-transform: translateY(100%); -ms-transform: translateY(100%);
-                                                                     -moz-transform: translateY(100%); -o-transform: translateY(100%);  top: 0;left:0;}
-.carousel-inner > .item.prev ,.carousel-inner > .item.active.left{ transform: translateY(-100%); -webkit-transform: translateY(-100%);  -moz-transform: translateY(-100%);
-                                                                   -ms-transform: translateY(-100%); -o-transform: translateY(-100%); top: 0; left:0;}
-.carousel-inner > .item.next.left , .carousel-inner > .item.prev.right , .carousel-inner > .item.active{transform:translateY(0); -webkit-transform:translateY(0);
-                                                                                                        -ms-transform:translateY(0);-moz-transform:translateY(0); -o-transform:translateY(0); top:0; left:0;}
+.carousel-inner> .item.item1.next ,  .carousel-inner > .item.item1.active.right{ 
+    transform: translateY(100%); 
+    -webkit-transform: translateY(100%); 
+    -ms-transform: translateY(100%);
+    -moz-transform: translateY(100%); 
+    -o-transform: translateY(100%);  
+    top: 0;
+    left:0;
+}
+
+.carousel-inner > .item.item1.prev ,.carousel-inner > .item.item1.active.left{ 
+    transform: translateY(-100%); 
+    -webkit-transform: translateY(-100%);  
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%); 
+    -o-transform: translateY(-100%); 
+    top: 0; 
+    left:0;
+}
+
+.carousel-inner > .item.item1.next.left , .carousel-inner > .item.item1.prev.right , .carousel-inner > .item.item1.active{
+    transform:translateY(0); 
+    -webkit-transform:translateY(0);
+    -ms-transform:translateY(0);
+    -moz-transform:translateY(0); 
+    -o-transform:translateY(0); 
+    top:0; 
+    left:0;
+}
 
 
 /*-------- Animation slider ------*/
@@ -79,12 +102,38 @@ html,body{
     height: 100%;      
 }
 
-.item  h2{font-size:40px; animation-delay:1s;animation-duration:1s; color: #ffcf1e; width:80%;}
-.item  p{animation-delay:1.5s;animation-duration:1s; width:80%; font-size: 16px;}
-.item .fill{padding:0px; display:table; }
-.item .inner-content{display: table-cell;vertical-align: middle; padding: 15px; background-color: rgba(0, 0, 0, 0.5); height: 100vh; }
+.item  h2{
+    font-size:40px; 
+
+    animation-delay:1s;
+    animation-duration:1s; 
+    /*    color: #ffcf1e; 
+        width:90%;*/
+}
+
+
+.item  p{
+    animation-delay:1.5s;
+    animation-duration:1s; 
+    /*    width:90%; 
+        font-size: 16px;*/
+}
+
+
+.item .fill{
+    padding:0px; 
+    display:table;
+}
+
+.item .inner-content{
+    display: table-cell;
+    /*vertical-align: middle;*/
+    padding: 15px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 100vh; }
 
 .item1 .item2 .item3 .carousel-img img , .item1.active .item2.active .item3.active .carousel-img img{max-height:300px;}
+
 .item1.active .item2.active .item3.active .carousel-img img.animated{
     visibility:visible; 
     opacity:1; 
@@ -105,6 +154,52 @@ html,body{
 
 .item .carousel-desc {width:100%;}
 
+.text-left-bottom{
+    vertical-align: bottom;
+    padding-bottom: 100px !important;
+
+}
+
+.text-left-bottom h2{
+    text-align: left;
+    padding-left: 25px;
+    float: left;
+    padding-bottom: 15px;
+    color: #ffcf1e; 
+    width:95%;
+}
+
+.text-left-bottom p{
+    text-align: left;
+    padding-left: 25px;
+    float: left;
+    width:95%; 
+    font-size: 16px;
+    /*    padding-top: 15px;*/
+}
+
+.text-top-right{
+    vertical-align: top;
+    padding-top: 10px !important;
+}
+
+.text-top-right p{
+    text-align: right;
+    padding-right: 25px;
+    float: right;
+    padding-top: 15px; 
+    font-size: 16px;
+    width: 55%;
+}
+
+.text-top-right h2{
+    text-align: right;
+    padding-right: 25px;
+    float: right;
+    padding-top: 15px; 
+    color: #ffcf1e; 
+    width: 55%;
+}
 
 @media(max-width:768px)
 {
@@ -119,52 +214,44 @@ html,body{
     .contact{
         padding-left: 30px;
     }
+
+    .text-left-bottom{
+        vertical-align: middle;   
+        padding-bottom: 0px !important;
+    }
+
+    .text-top-right{
+        vertical-align: middle;   
+        padding-bottom: 0px !important;
+    }
+
 }
 @media(max-width:480px)
 {
     .item  h2{font-size:30px;}
     .item .carousel-desc p{width:100%;}
     .logo-img{
-        width: 70px;
+        /*        width: 70px;*/
+        height: 60px;
         margin-top: 15px;
         margin-right: 25px;
+    }
+
+    .text-left-bottom{
+        vertical-align: middle; 
+        padding-bottom: 0px !important;
+    }
+
+    .text-top-right{
+        vertical-align: middle; 
+        padding-bottom: 0px !important;
     }
 }
 
 
-.text-left-bottom h2{
-    text-align: left;
-    padding-left: 25px;
-    float: left;
-}
 
-.text-left-bottom p{
-    text-align: left;
-    padding-left: 25px;
-    float: left;
-    padding-top: 15px;
-}
+/*  vertical nav */ 
 
-.text-top-right p{
-    text-align: right;
-    padding-right: 25px;
-    float: right;
-    padding-top: 15px; 
-}
-
-.text-top-right h2{
-    text-align: right;
-    padding-right: 25px;
-    float: right;
-    padding-top: 15px; 
-}
-
-/* make sidebar nav vertical */ 
-
-
-.main{
-    padding: 10px 10px 0 10px;
-}
 
 .img-brand{
     height: 100px;
@@ -228,7 +315,7 @@ html,body{
 @media screen and (max-width: 768px){
     .slide-container{
         height: 100%;
-        
+
     }
     .item  p{font-size: 14px;}
 
@@ -281,9 +368,16 @@ html,body{
 }
 
 .logo-img{
-    width: 16%;
+    /*    width: 16%;*/
+    height: 60px;
     margin-top: 20px;
     margin-right: 25px;
+    object-fit: contain;
+}
+
+.my{
+    width: 15%;
+    margin-right: 15px;
 }
 
 .form-dropdown{
@@ -316,6 +410,14 @@ html,body{
     height: 35px;
 }
 
+.subtitle{
+    color: #ffcf1e;
+    font-weight: bold;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
 /* end slide css */
 
 /* menu css */
@@ -331,7 +433,8 @@ html,body{
 @media(max-width:900px)
 {
     .logo-img{
-        width: 70px;
+        /*        width: 70px;*/
+        height: 60px;
         margin-top: 15px;
         margin-right: 25px;
     }
@@ -339,17 +442,6 @@ html,body{
 }
 
 @media (min-width: 901px) {
-
-    .main{
-        position: absolute;
-        width: calc(100% - 40px); 
-        margin-left: 40px;
-        float: right;
-    }
-
-    nav.sidebar:hover + .main{
-        margin-left: 200px;
-    }
 
     nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
         margin-left: 0px;
@@ -408,10 +500,6 @@ html,body{
 
 @media (min-width: 1330px) {
 
-    .main{
-        width: calc(100% - 200px);
-        margin-left: 200px;
-    }
 
     nav.sidebar{
         margin-left: 0px;
@@ -571,9 +659,13 @@ nav:hover .forAnimate{
     color: #ffcf1e;
 }
 
+
 .close{
     color: #ffcf1e;
     font-size: 30px;
     opacity: 0.8;
 }
 
+.thanks{
+    padding: 20px 20px;
+}

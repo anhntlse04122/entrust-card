@@ -13,16 +13,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+        <script src="dist/owl.carousel.min.js"></script>
 
-        <link rel="stylesheet" href="css/backup.css">
+        <link rel="stylesheet" href="css/home.css">
         <script src="css/home.js"></script>
 
     </head>
-    <body>
+    <body >
         <section class="slide-wrapper">
             <div class="row carousel slide" id="myCarousel" >
                 <!--start div menu-->
-                <nav class="col-sm-2-5 navbar navbar-default sidebar" role="navigation">
+                <nav class="col-sm-2-5 navbar navbar-default sidebar" role="navigation" id="myScrollspy">
                     <div class="container-fluid">
                         <div class="navbar-header">
 
@@ -36,18 +39,18 @@
                         </div>
                         <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li data-target="#myCarousel" data-slide-to="1"  class="active"><a href="#">Về chúng tôi</a></li>         
-                                <li data-target="#myCarousel" data-slide-to="2" ><a href="#">Đối tác</a></li>        
-                                <li data-target="#myCarousel" data-slide-to="3" ><a href="#">Y tế - Sức khoẻ - Dược mỹ phẩm</a></li>
-                                <li data-target="#myCarousel" data-slide-to="4" ><a href="#"> Du học - Giáo dục</a></li>
-                                <li data-target="#myCarousel" data-slide-to="5" ><a href="#">Dịch vụ hàng không</a></li>
-                                <li data-target="#myCarousel" data-slide-to="6" ><a href="#">Đầu tư tài sản có giá trị lớn</a></li>
-                                <li data-target="#myCarousel" data-slide-to="7" ><a href="#">Mua sắm - Ẩm thực</a></li>
+                                <li id="s1" data-target="#myCarousel" data-slide-to="1" ><a href="#">Về chúng tôi</a></li>         
+                                <li id="s2" data-target="#myCarousel" data-slide-to="2" ><a href="#">Đối tác</a></li>        
+                                <li id="s3" data-target="#myCarousel" data-slide-to="3" ><a href="#">Y tế - Sức khoẻ - Dược mỹ phẩm</a></li>
+                                <li id="s4" data-target="#myCarousel" data-slide-to="4" ><a href="#"> Du học - Giáo dục</a></li>
+                                <li id="s5" data-target="#myCarousel" data-slide-to="5" ><a href="#">Dịch vụ hàng không</a></li>
+                                <li id="s6" data-target="#myCarousel" data-slide-to="6" ><a href="#">Đầu tư tài sản có giá trị lớn</a></li>
+                                <li id="s7" data-target="#myCarousel" data-slide-to="7" ><a href="#">Mua sắm - Ẩm thực</a></li>
                                 <li><hr/></li>
                                 <li data-toggle="modal" data-target="#SignupPartnerModal" ><a href="#">Đăng ký đối tác</a></li>
                                 <li data-toggle="modal" data-target="#SignupCardModal" ><a href="#">Đăng ký thẻ VietMaslow</a></li>
                                 <li><hr/></li>
-                                <li data-target="#myCarousel" data-slide-to="8"><a href="#">Liên hệ</a></li>
+                                <li id="s8" data-target="#myCarousel" data-slide-to="8"><a href="#">Liên hệ</a></li>
                                 <li >
                                     <span>    <a href="http://www.facebook.com/vietmaslow"  target="_blank">   <img class="banner-icon" src="img/fb.png" /> </a> </span>
                                     <span data-toggle="modal" data-target="#SendMailModal">     <img class="banner-icon" src="img/mail.png" />  </span> 
@@ -66,14 +69,14 @@
 
                     <div class="slide-container">
                         <div id="arrowprev" class="arrow-prev">
-                            <img src="img/7.png" alt="" class="arrow" />
+                            <img src="img/arrowprev.png" alt="" class="arrow" />
                         </div>
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
-                            <div class="item item1 active">
+                            <div class="item item1 active" id="a0">
                                 <div class="fill" style="background-image: url('img/banner8.png');">
-                                    <div class="inner-content">
-                                        <div class="carousel-desc text-left-bottom">
+                                    <div class="inner-content text-left-bottom">
+                                        <div class="carousel-desc ">
                                             <h2>Hàng ngàn ưu đãi cho cuộc sống tiện nghi</h2>
                                             <p>Chi tiêu có kế hoạch, tiết kiệm thời gian, tiết kiệm chi phí, tận hưởng
                                                 cuộc sống chậm rãi và trọn vẹn hơn cùng VietMaslow</p>
@@ -81,42 +84,58 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item item1">
+                            <div class="item item1" id="a1" >
                                 <div class="fill" style="background-image: url('img/banner1.png');">
-                                    <div class="inner-content">
-                                        <div class="carousel-desc text-left-bottom">
+                                    <div class="inner-content text-left-bottom">
+                                        <div class="carousel-desc ">
                                             <h2>Về chúng tôi - VietMaslow</h2>
-                                            <p>VietMaslow là cầu nối mang khách hàng tới với các dịch vụ hỗ trợ tiện ích chất lượng cao và đa dạng thông qua việc xây dựng hệ sinh thái các đối tác trong 5 nhóm lĩnh vực lớn là Y tế - Sức khoẻ - Dược mỹ phẩm, Du học - Giáo dục, Dịch vụ Hàng không, Đầu tư tài sản có giá trị lớn; Mua sắm và Ẩm thực. VietMaslow cam kết mang đến lợi ích tối đa cho khách hàng và đối tác, tiết kiệm thời gian, tiết kiệm chi phí, từ đó tạo dựng một phong cách sống mới, chi tiêu có kế hoạch và tận hưởng cuộc sống trọn vẹn hơn.</p>
+                                            <p>Công ty cổ phần Maslow Việt Nam (VietMaslow) là một Holdings, sở hữu một phần hoặc toàn bộ các công ty thành viên trong một hệ sinh thái doanh nghiệp có 5 lĩnh vực chính: Y tế - Sức khoẻ - Dược mỹ phẩm, Du học – Giáo dục, Đầu tư Tài sản có giá trị lớn, Mua sắm Ẩm thực, Dịch vụ Hàng không.</p>
+                                            <p class="subtitle">TẦM NHÌN</p>
+                                            <p>Khát vọng trở thành hệ sinh thái tiêu dùng thông minh hàng đầu Việt Nam và uy tín
+                                                trên thế giới, VietMaslow mong muốn tạo ra lợi ích cao nhất cho xã hội với những giá
+                                                trị cốt lõi không thể thiếu trên con đường phát triển của công ty.</p>
+                                            <p class="subtitle">SỨ MỆNH </p>
+                                            <p>Xây dựng hệ sinh thái tiêu dùng thông minh, đa dạng và thực tế dành cho người sử dụng thuộc 5 nhóm lĩnh vực.</p>
+                                            <p>
+                                                Hướng tới lối sống chậm, văn hóa tiêu dùng thông minh và có kế hoạch, VietMaslow tối ưu hóa những chi tiêu của khách hàng, mang đến sự hài lòng và hưởng thụ cao nhất; Không ngừng tạo lập các giá trị gia tăng bền vững cho khách hàng, đối tác, đồng nghiệp, nhà đầu tư và xã hội; </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item item1">
+                            <div class="item item1" id="a2">
                                 <div class="fill" style="background-image: url('img/banner2.jpg');">
-                                    <div class="inner-content">
-                                        <div class="carousel-desc text-left-bottom">
-                                            <h2>Đối tác</h2>
-                                            <p>Thành công của đối tác cũng chính là thành công của chúng tôi. Lựa chọn những đối tác uy tín, cung cấp sản phẩm dịch vụ chất lượng cao nhằm mang lại những giá trị thiết thực cho khách hàng là mục tiêu của VietMaslow.</p>
-                                            <p>Đối tác sẽ được cam kết hỗ trợ các quyền lợi tài chính, truyền thông, hỗ trợ các chương trình xúc tiến bán hàng gia tăng doanh số, tiết kiệm và tối ưu chi phí tiếp thị.</p>
-                                            <p>
-                                                <img class="logo-img" src="img/logo1.png" alt=""/>
-                                                <!--<img class="logo-img" src="img/logo8.jpeg" alt=""/>-->
-                                                <img class="logo-img" src="img/logo6.png" alt=""/>
-                                                <!--<img class="logo-img" src="img/logo5.png" alt=""/>-->
-                                                <img class="logo-img" src="img/logo7.jpeg" alt=""/>
-                                            </p>
+                                    <div class="inner-content text-left-bottom">
+                                        <div class="carousel-desc ">
 
-                                            <p>
-                                                <button class="banner-btn">Đăng ký tìm hiểu thêm thông tin</button>
-                                            </p>
+                                            <div class="row"> <div class="col-xs-12"> <h2>Đối tác</h2></div> </div>
+                                            <div class="row"> <div class="col-xs-12">  <p>Thành công của đối tác cũng chính là thành công của chúng tôi. Lựa chọn những đối tác uy tín, cung cấp sản phẩm dịch vụ chất lượng cao nhằm mang lại những giá trị thiết thực cho khách hàng là mục tiêu của VietMaslow.</p> </div></div>
+                                            <div class="row"> <div class="col-xs-12">  <p>Đối tác sẽ được cam kết hỗ trợ các quyền lợi tài chính, truyền thông, hỗ trợ các chương trình xúc tiến bán hàng gia tăng doanh số, tiết kiệm và tối ưu chi phí tiếp thị.</p>  </div></div>
+                                            <div class="row owl-carousel owl-theme owl-loaded myCustomWrapper">
+                                                <div class="owl-stage-outer">
+                                                    <div class="owl-stage">
+                                                        <div class="owl-item"><img class="logo-img" src="img/logo1.png" alt=""/></div>
+                                                        <div class="owl-item"><img class="logo-img" src="img/logo2.png" alt=""/></div>
+                                                        <div class="owl-item"><img class="logo-img" src="img/logo3.png" alt=""/></div>
+                                                        <div class="owl-item"><img class="logo-img" src="img/logo4.png" alt=""/></div>
+                                                        <div class="owl-item"><img class="logo-img" src="img/logo5.png" alt=""/></div>
+                                                        <div class="owl-item"><img class="logo-img" src="img/logo6.png" alt=""/></div>
+                                                        <div class="owl-item"><img class="logo-img" src="img/logo7.jpeg" alt=""/></div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row"  ><p>
+                                                    <button class="banner-btn">Đăng ký tìm hiểu thêm thông tin</button>
+                                                </p> </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item item1">
+                            <div class="item item1" id ="a3">
                                 <div class="fill" style="background-image: url('img/banner3.png');">
-                                    <div class="inner-content">
-                                        <div class="carousel-desc text-left-bottom">
+                                    <div class="inner-content text-left-bottom">
+                                        <div class="carousel-desc ">
                                             <h2>Y tế - Sức khoẻ - Dược mỹ phẩm</h2>
                                             <p>Là mảng dịch vụ trọng yếu trong Hệ sinh thái  VietMaslow, dịch vụ hỗ trợ y tế - sức khoẻ của chúng tôi sẽ đem tới cho quý khách hàng những sản phẩm, dịch vụ với chất lượng cao và giá thành tốt nhất ở trong nước cũng như quốc tế. </p>
 
@@ -134,10 +153,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item item1">
+                            <div class="item item1" id="a4">
                                 <div class="fill" style="background-image: url('img/banner4.jpg');">
-                                    <div class="inner-content">
-                                        <div class="carousel-desc text-top-right">
+                                    <div class="inner-content text-top-right">
+                                        <div class="carousel-desc">
                                             <h2> Du học - Giáo dục</h2>
                                             <p>VietMaslow cung cấp danh mục các chương trình đào tạo gồm tất cả các loại hình du học, vừa học vừa làm, xuất khẩu lao động; áp dụng với tất cả các bậc học (trước và sau Đại học); dịch vụ đào tạo ngoại ngữ như Anh, Nhật, Hàn, Đức và nhiều nước khác trên thế giới.
                                             </p>
@@ -147,10 +166,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item item1">
+                            <div class="item item1" id="a5">
                                 <div class="fill" style="background-image: url('img/banner5.jpg');">
-                                    <div class="inner-content">
-                                        <div class="carousel-desc text-top-right">
+                                    <div class="inner-content text-top-right">
+                                        <div class="carousel-desc ">
                                             <h2 >1000+ phòng chờ cao cấp trên toàn thế giới</h2>
                                             <p>Cung cấp vé máy bay nội địa, quốc tế và các dịch vụ hàng không cao cấp:  hỗ trợ  check-in,  hỗ trợ qua cửa an ninh, hỗ trợ lên máy bay, hỗ trợ xuất nhập cảnh và hợp tác với Dragon Pass cung cấp hơn 1000 phòng chờ cao cấp trên toàn thế giới.  Với tiêu chí phấn đấu trở thành một  doanh nghiệp  có vị trí  hàng đầu tại  Việt Nam  và khu vực, trong  lĩnh vực  cung cấp  vé máy bay trong nước,  quốc tế  và  các dịch vụ hỗ trợ hàng  không  cao cấp, chúng tôi mang tới giải pháp giúp chuyến bay của khách hàng được thực hiện thuận tiện và nhanh chóng.</p>
                                             <p ><button class="banner-btn">Lên lịch bay ngay</button></p>
@@ -158,10 +177,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item item1">
+                            <div class="item item1" id="a6">
                                 <div class="fill" style="background-image: url('img/banner6.jpg');">
-                                    <div class="inner-content ">
-                                        <div class="carousel-desc text-left-bottom">
+                                    <div class="inner-content text-left-bottom">
+                                        <div class="carousel-desc ">
                                             <h2>Đầu tư tài sản giá trị lớn</h2>
                                             <p>Thông qua hợp tác với các nhà cung cấp chuyên nghiệp hàng đầu trong lĩnh vực kinh doanh tài sản có giá trị lớn như bất động sản, du thuyền, xe hơi… VietMaslow hỗ trợ khách hàng lên kế hoạch đầu tư vào các danh mục, loại hình tài sản đa dạng, mang lại lợi nhuận và giá trị sử dụng tối đa.</p>
                                             <p><button class="banner-btn">Danh mục đối tác</button></p>
@@ -169,10 +188,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item item1">
+                            <div class="item item1" id="a7">
                                 <div class="fill" style="background-image: url('img/banner7.png');">
-                                    <div class="inner-content">
-                                        <div class="carousel-desc text-left-bottom">
+                                    <div class="inner-content text-left-bottom">
+                                        <div class="carousel-desc ">
                                             <h2>Mua sắm - Ẩm thực</h2>
                                             <p>Cam kết mang lại những ưu đãi tốt nhất hỗ trợ khách hàng khi đi mua sắm hàng hoá từ những món tiêu dùng hàng ngày tới những đồ hàng hiệu đắt tiền, hay khi đi trải nghiệm ẩm thực trên khắp Việt nam, VietMaslow và các đối tác uy tín trong hệ sinh thái sẽ luôn đồng hành cùng bạn.</p>
                                             <p><button class="banner-btn">Tham khảo danh sách ưu đãi ngay</button></p>
@@ -180,8 +199,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="fill" style="background-image: url('img/download.png');">
+                            <div class="item" id="a8">
+                                <div class="fill" >
                                     <div class="contact">
                                         <div class="row contact-item">
                                             <div class="col-md-4 col-sm-12 col-xs-12"><h2>Liên hệ</h2></div>
@@ -191,7 +210,7 @@
                                                 <input type="text" class="form-subcrible" placeholder="Nhập email để đăng ký nhận bản tin ưu đãi ">
                                             </div>
                                             <div class="col-sm-3">
-                                                <button class="btn-subcrible">Đăng ký</button>
+                                                <button class="btn-subcrible" data-toggle="modal" data-target="#ThanksSubModal">Đăng ký</button>
                                             </div>
                                         </div>
                                         <div class="row contact-item">
@@ -213,7 +232,7 @@
 
                         </div>
                         <div id="arrownext" class="arrow-next">
-                            <img src="img/7.png" alt="" class="arrow" />
+                            <img src="img/arrownext.png" alt="" class="arrow" />
                         </div>
                     </div>
 
@@ -292,85 +311,123 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12"><button class="form-btn">Đăng ký</button></div>
+                        <div class="col-sm-12"><button id="register-parter" class="form-btn" data-toggle="modal" data-target="#ThanksRegisterModal">Đăng ký</button></div>
                     </div>
                 </div>
             </div>
 
         </div>
-    <!--end form tao doi tac-->
-    <!-- Modal form tao the -->
-    <div class="modal fade" id="SignupCardModal" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Đăng ký thẻ VietMaslow</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Đăng ký ngay để nhận được các ưu đãi từ hệ sinh thái VietMaslow. 
-                        Chúng tôi sẽ liên hệ theo thông tin bạn cung cấp để tư vấn hỗ trợ mở thẻ.</p>
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <label for="name">Họ và tên</label>
-                            <input type="text" class="form-control" id="name">
+        <!--end form tao doi tac-->
+        <!-- Modal form tao the -->
+        <div class="modal fade" id="SignupCardModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Đăng ký thẻ VietMaslow</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Đăng ký ngay để nhận được các ưu đãi từ hệ sinh thái VietMaslow. 
+                            Chúng tôi sẽ liên hệ theo thông tin bạn cung cấp để tư vấn hỗ trợ mở thẻ.</p>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="name">Họ và tên</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="name">Mobile</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="mail">Email</label>
+                                <input type="email" class="form-control" id="mail">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="haveCard">Bạn đã có Thẻ hoặc tài khoản của ngân hàng SHB chưa?</label>
+                                <p> 
+                                    <label class="radio-inline"><input type="radio" name="haveCard" checked>Chưa có</label>
+                                    <label class="radio-inline"><input type="radio" name="haveCard">Đã có</label>
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-sm-12 form-group">
-                            <label for="name">Mobile</label>
-                            <input type="text" class="form-control" id="name">
-                        </div>
-                        <div class="col-sm-12 form-group">
-                            <label for="mail">Email</label>
-                            <input type="email" class="form-control" id="mail">
-                        </div>
-                        <div class="col-sm-12 form-group">
-                            <label for="haveCard">Bạn đã có Thẻ hoặc tài khoản của ngân hàng SHB chưa?</label>
-                            <p> 
-                                <label class="radio-inline"><input type="radio" name="haveCard" checked>Chưa có</label>
-                                <label class="radio-inline"><input type="radio" name="haveCard">Đã có</label>
-                            </p>
+                        <div class="row">
+                            <div class="col-sm-12"><button id="register-card" class="form-btn" data-toggle="modal" data-target="#ThanksRegisterModal">Đăng ký</button></div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12"><button class="form-btn">Đăng ký</button></div>
-                    </div>
                 </div>
+
             </div>
-
         </div>
-    </div>
-    <!--end form tao the-->
+        <!--end form tao the-->
+        <!-- Modal form email -->
+        <div class="modal fade" id="SendMailModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Liên lạc ngay với chúng tôi</h4>
+                    </div>
+                    <div class="modal-body">
 
-    <!-- Modal form email -->
-    <div class="modal fade" id="SendMailModal" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Liên lạc ngay với chúng tôi</h4>
-                </div>
-                <div class="modal-body">
-
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <label for="title">Tiêu đề</label>
-                            <input type="text" class="form-control" id="title">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="title">Email của bạn</label>
+                                <input type="text" class="form-control" id="title">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="title">Tiêu đề</label>
+                                <input type="text" class="form-control" id="title">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label for="mail">Nội dung</label>
+                                <textarea rows="6" style="width: 100%"></textarea>
+                            </div>
                         </div>
-                        <div class="col-sm-12 form-group">
-                            <label for="mail">Nội dung</label>
-                            <textarea rows="6" style="width: 100%"></textarea>
+                        <div class="row">
+                            <div class="col-sm-12"><button class="form-btn">Gửi</button></div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12"><button class="form-btn">Gửi</button></div>
-                    </div>
                 </div>
+
             </div>
-
         </div>
-    </div>
-    <!--end form email-->
-</body>
+        <!--end form email-->
+        <!-- Modal thanks register -->
+        <div class="modal fade" id="ThanksRegisterModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title thanks ">Cảm ơn bạn/anh chị đã đăng ký thông tin, chúng tôi sẽ sớm liên hệ để hỗ trợ!</h4>
+                         <div class="row thanks">
+                            <div class="col-sm-12"><button id="register-card" class="form-btn" data-dismiss="modal">OK</button></div>
+                        </div>
+                    </div>
+      
+                </div>
+
+            </div>
+        </div>
+        <!--end modal thanks register-->
+        <!-- Modal thanks subscribe -->
+        <div class="modal fade" id="ThanksSubModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title thanks">Cảm ơn bạn/anh chị đã đăng ký nhận bản tin ưu đãi của VietMaslow!</h4>
+                        <div class="row thanks">
+                            <div class="col-sm-12"><button id="register-card" class="form-btn" data-dismiss="modal">OK</button></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--end modal thanks subscribe-->
+    </body>
 </html>
